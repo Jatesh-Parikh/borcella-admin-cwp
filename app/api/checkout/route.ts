@@ -9,6 +9,7 @@ const corsHeaders = {
 };
 
 export async function OPTIONS() {
+  noStore();
   return NextResponse.json({}, { headers: corsHeaders });
 }
 
